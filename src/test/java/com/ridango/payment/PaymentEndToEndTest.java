@@ -1,6 +1,6 @@
 package com.ridango.payment;
 
-import com.rindago.payment.PaymentApplication;
+import com.ridango.payment.PaymentApplication;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 
