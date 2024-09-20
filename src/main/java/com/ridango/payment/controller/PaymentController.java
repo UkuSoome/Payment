@@ -1,6 +1,7 @@
 package com.ridango.payment.controller;
 
 
+import com.ridango.payment.entity.Account;
 import com.ridango.payment.entity.Payment;
 import com.ridango.payment.model.PaymentRequest;
 import com.ridango.payment.model.Response;
@@ -29,7 +30,13 @@ public class PaymentController {
 
     @GetMapping(value = "/payment")
     public ResponseEntity<List<Payment>> payment() {
-        List<Payment> payments = paymentService.getPayment();
+        List<Payment> payments = paymentService.getPayments();
         return Response.ok(payments);
+    }
+
+    @GetMapping(value = "/account")
+    public ResponseEntity<List<Account>> account() {
+        List<Account> accounts = paymentService.getAccounts();
+        return Response.ok(accounts);
     }
 }
