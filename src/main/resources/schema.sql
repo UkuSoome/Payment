@@ -11,6 +11,7 @@ CREATE TABLE payment(
   id BIGINT AUTO_INCREMENT PRIMARY KEY,
   sender_account_id BIGINT NOT NULL,
   receiver_account_id BIGINT NOT NULL,
+  amount NUMERIC(18, 2) NOT NULL,
   timestamp TIMESTAMP NOT NULL,
   FOREIGN KEY (sender_account_id) REFERENCES account(id),
   FOREIGN KEY (receiver_account_id) REFERENCES account(id)
