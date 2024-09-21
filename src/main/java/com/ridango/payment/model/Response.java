@@ -1,9 +1,6 @@
 package com.ridango.payment.model;
 
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 
 public class Response {
 
@@ -16,6 +13,10 @@ public class Response {
 
     public static <T> ResponseEntity<T> ok() {
         return createResponse(HttpStatus.OK, null);
+    }
+
+    public static <T> ResponseEntity<T> nok(HttpStatus statusCode, T body) {
+        return createResponse(statusCode, body);
     }
 
     private static <T> ResponseEntity<T> createResponse(HttpStatus statusCode, T body) {
