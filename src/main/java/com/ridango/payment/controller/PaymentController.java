@@ -1,8 +1,8 @@
 package com.ridango.payment.controller;
 
 
-import com.ridango.payment.entity.Account;
-import com.ridango.payment.entity.Payment;
+import com.ridango.payment.model.entity.Account;
+import com.ridango.payment.model.entity.Payment;
 import com.ridango.payment.model.PaymentRequest;
 import com.ridango.payment.model.Response;
 import com.ridango.payment.service.PaymentService;

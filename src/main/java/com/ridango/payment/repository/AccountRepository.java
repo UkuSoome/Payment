@@ -1,6 +1,6 @@
 package com.ridango.payment.repository;
 
-import com.ridango.payment.entity.Account;
+import com.ridango.payment.model.entity.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

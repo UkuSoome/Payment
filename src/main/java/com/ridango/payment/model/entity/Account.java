@@ -1,4 +1,4 @@
-package com.ridango.payment.entity;
+package com.ridango.payment.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
