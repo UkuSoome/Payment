@@ -1,8 +1,6 @@
 package com.ridango.payment.exception;
 
 import com.ridango.payment.model.Response;
-import jakarta.transaction.Transactional;
-import jakarta.transaction.TransactionalException;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,7 +26,7 @@ public class RestExceptionHandler {
     }
 
     @ExceptionHandler(RuntimeException.class)
-    public ResponseEntity<Object> handleTransactionalException(@NotNull RuntimeException ex) {
+    public ResponseEntity<Object> handleRuntimeException(@NotNull RuntimeException ex) {
         return Response.nok(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage());
     }
 }
