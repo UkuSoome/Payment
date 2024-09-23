@@ -1,3 +1,11 @@
+## Notes
+Upgraded to java 21 and Spring boot 3.3.3. I am using some Spring Boot 3.2 features, so it has to be at least that.
+
+`./gradlew build` and `./gradlew bootrun` to run the application. Or just use run in Intellj, should work by default.
+
+I wrote code on Windows and it created some line ending problems with gradlew and testcurl.sh scripts, 
+so run `sed -i 's/\r$//' ./gradlew` if the script gives any errors.
+
 ## To build a project
 * Java 1.8 or newer
 * Gradle 6.0 or newer
