@@ -27,6 +27,7 @@ public class PaymentController {
         return Response.ok();
     }
 
+    //Left the get methods just for testing to see the data if you wish.
     @GetMapping(value = "/payment")
     public ResponseEntity<List<Payment>> payment() {
         List<Payment> payments = paymentService.getPayments();
